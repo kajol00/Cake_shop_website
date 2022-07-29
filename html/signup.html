@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    .title{
+        border:5px solid;
+        border-image:linear-gradient(to left,red,green,orange,black)1;
+        width:50%;
+        height:500px;
+        margin-top:120px;
+        align-items: center;
+        color:black;
+        margin-left:360px;
+    }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+label{
+  font-size:20px;
+  color:black;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+.container1 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+
+
+  .cancelbtn {
+     width: 100%;
+  }
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="./logo.png" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./login1.html">Login</a>
+        </nav>
+        </header>
+        <div class="title">
+            <form method="" action="../html/index.html" name="reg_form" onsubmit="return validate()"> 
+   <marquee direction="to left" align:center style="font-size:20px;color:red; width:100%;height:100%;">Welcome to Cake Shop</marquee>
+
+    <div class="container1">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="tel"><b>Contact</b></label>
+      <input type="text" placeholder="Contact"  id="tel" name="tel" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+<br>
+<br>
+<br>
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn" ><a href="../html/signup.html"><span style="color:white;font-size:18px;">Sign Up</span></a></button>
+    </div>
+  </form>
+</div>
+</div>
+<script>
+function validate() {  
+        var fname = document.reg_form.uname; 
+        var telephone = document.reg_form.tel; 
+            if (fname.value.length <= 0) {  
+            alert("Name is required");  
+            fname.focus();  
+            return false;  
+        }  
+        if (telephone.value.length !=10) {  
+            if(typeof telephone.value.length!=)
+            alert("Invalid Number");  
+            telephone.focus();  
+            return false;  
+        }
+    }
+
+</script>
+
+
+<pre>
+
+
+
+</pre>
+
+
+
+<footer class="footer" id="contact">
+    <div class="box-container">
+        <div class="mainBox">
+            <div class="content">
+                <a href="#"><img src="./logo.png" alt=""></a>
+                <h1 class="logoName"> Sweet Cake </h1>
+            </div>
+
+            <p>Obsessive doesn’t even begin to describe my love for cake. I’ll even fight little children if I have to.</p>
+
+        </div>
+        <div class="box">
+            <h3>Quick link</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+        </div>
+        <div class="box">
+            <h3>Extra link</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
+            <a href="#"> <i class="fas fa-envelope"></i>kajolpathak@gmail.com</a>
+
+        </div>
+
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+    <div class="credit"></div>
+         |all rights reserved ! 
+    </div>
+</footer>
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file  -->
+<script src="../javascript/index.js"></script>
+</body>

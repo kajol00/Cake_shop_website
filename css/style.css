@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+.header .logoContent{
+    display: flex;
+    align-items: center;
+}
+.header .logoContent .logo img{
+    height: 4rem;
+}
+.header{
+    background-color:rgb(243, 113, 26);
+}
+/*container*/
+.container{
+    background-image: url(../html/cake_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    width:100%;
+    height:500px;
+}
+.site_title{
+    position:absolute;
+    top:50%;
+    left:15%;
+    transform: translateX(-50%);
+    z-index:2;
+    font-family:sans-serif;
+}
+.site_title p{
+    font-size:26px;
+    color:white;
+    text-align:center;
+    margin:0;
+    letter-spacing: 6px;
+    margin-top:10px;
+    margin-left:690px;
+    font-weight: 900;
+}
+.overlay{
+    background:#0000008a;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+/*slide show*/
+.slideshow-container {
+    width: 100%;
+    border:1px solid white;;
+    border-radius:30%;
+  }
+  
+  /* Caption text */
+  .text {        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  /*product heading text*/
+  .p_heading{
+    border:2px solid black;
+  background-color: rgb(44, 24, 7);
+  padding:0 5px solidblack;
+  color:white;
+  width:100%;
+  height:200px;
+  font-size:29px;
+  }
+
+  /*block3 design*/
+  .block3{
+    border:2px solid white;
+    padding:2px;
+    width:40px;
+    color:white;
+    background-color:#717171;
+    height:50px;
+  }
+
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  /*booking*/
+  .booking{
+    width:40%;
+    height:600px;
+    border:2px solid blue;
+    margin-left:1000px;
+    margin-top:190px;
+    background-color:#ffffff;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+ .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color:white;
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--black);
+    padding-bottom: .4rem;
+}
+.header .icon i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+
+
+#menu-bar{
+    display: none;
+}
+
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+.row1,.row2{
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column1,.column2{
+    flex: 33.33%;
+    padding: 5px;
+    height:300px;
+  }
+  .column1 h2{
+    color:red;
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  .product1{
+    border:5px solid;
+    width:100%;
+
+    height:900px;
+    border-image:linear-gradient(to left,red, green ,blue, black)1;
+
+  }
+  .product2{
+    border:5px solid;
+    width:100%;
+    height:500px;
+    border-image:linear-gradient(to left,red, green ,blue, black)1;
+  }
+
+.product1 img:hover{
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color:black;
+    background-size: cover;
+    background-position: center center;
+    color:white;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+.footer .box-container .mainBox .content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.footer .box-container .mainBox .content h1{
+    font-size: 14px;
+    color: white;
+}
+.footer .box-container .mainBox p{
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: white;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.6rem;
+    color:white;
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    padding-right: .5rem;
+ color:white;
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+}
+.footer .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 0 .3rem;
+    border-radius: 50%;
+
+}
+.footer .share a:hover{
+    background: black;;
+    color: white;
+}
+.footer .credit{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    text-align: center;
+    
+}

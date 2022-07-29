@@ -1,0 +1,96 @@
+<link href="jquery-gallery.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous"></script>
+<script src="jquery-gallery.js"></script>
+<link rel="stylesheet" href="../css/style.css"></link>
+<style>
+    #slideshow { 
+  margin: 50px auto; 
+  position: relative; 
+  width:100%; 
+  height:500px;
+  padding: 10px; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+.slider_new{
+    width:100%;
+    height:500px;
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+</style>
+<html>
+    <body>
+        <div id="slideshow">
+            <div>
+              <img class="slider_new" src="./cake_background.jpg">
+                <div class="site_title">
+          <p>Welcome to Delicious Cake Shop</p>
+          <p>Let's face it, a nice creamy chocolate cake does a lot for a lot of
+             people; it does for me.</p>
+      </div>
+      <div class="overlay">
+
+      </div>
+            </div>
+            <div>
+                <img class="slider_new" src="./slide_cake1.jpg">
+                  <div class="site_title">
+                    <p>I was a fat child and loved cake, perhaps because it was the only sweet thing in my life.
+       </p> </div>
+        <div class="overlay">
+  
+        </div>
+              </div>
+              <div>
+                <img  class="slider_new" src="./slide_cake2.jpg">
+                  <div class="site_title">
+            <p>Cake Boss’ does massive, massive things, which are great</p>
+        </div>
+        <div class="overlay">
+  
+        </div>
+              </div>
+              <div>
+                <img class="slider_new" src="./slide_cake3.jpg">
+                  <div class="site_title">
+            <p>Freedom is not to be bound by my wounds. And to be able to eat cake every day.
+            </p>
+        </div>
+        <div class="overlay">
+  
+        </div>
+              </div>
+              <div>
+                <img  class="slider_new" src="./slide_cake4.jpg">
+                  <div class="site_title">
+            <p>Because the sweeter the cake, the more bitter the jelly can be.</p>
+        </div>
+        <div class="overlay">
+  
+        </div>
+              </div>
+          </div>
+          <script>
+            $("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+  .fadeOut(1000)
+  .next()
+  .fadeIn(1000)
+  .end()
+  .appendTo('#slideshow');
+}, 2000);
+    
+              </script>
+    </body>
+</html>

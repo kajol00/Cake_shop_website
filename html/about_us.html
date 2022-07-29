@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  padding: 10px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:wheat;
+  color: black;
+}
+
+.flip-box-back {
+  border:9px solid;
+  background-color:orangered;
+  border-image:linear-gradient(to left,red,green,orange,black)1;
+  color:black;
+  transform: rotateY(180deg);
+}
+
+section{
+    margin-top:120px;
+    display: flex;
+    border:5px solid;
+    border-image:linear-gradient(to left,red,green,orange,black)1;
+    justify-content: center;
+    padding: 10px;
+}
+p,h2{
+    color:white;
+    font-size:19px
+
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="./logo.png" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./signup.html">Register</a>
+            <a href="./login1.html">Login</a>
+        </nav>
+    </header>
+
+<section>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="./chief.jpg" alt="Paris" style="width:300px;height:250px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Ruby Pathak</h2>
+      <br>
+      <br>
+      <p>The yesterday's Indian American actress whose passion for cooking '
+        led her to become a cooking author and know chef,Ruby widely considered responsible
+         for bringing indian cooking to a western audience through he books.</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="./chief11.jpg" alt="Paris" style="width:300px;height:250px">
+      </div>
+      <div class="flip-box-back">
+        <h2>Neha Vishwakarma</h2>
+        <br>
+        <br>
+        <p>Winner Of Chief she has come from along way .given her
+            flair for innovation of healthy yet delicious food,she is quite well-known in the internation culinary circuit.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="./chief3.jpg" alt="Paris" style="width:300px;height:250px">
+      </div>
+      <div class="flip-box-back">
+        <h2>Suresh Kadam</h2>
+        <br>
+        <br>
+        <p>He is a culinary master who is renowed for his cake maaking.which made him a star
+            in indian household.he is a restaurant and a cookbook author,who has a won several culinary award.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<pre>
+
+
+
+
+</pre>
+
+<footer class="footer" id="contact">
+    <div class="box-container">
+        <div class="mainBox">
+            <div class="content">
+                <a href="#"><img src="./logo.png" alt=""></a>
+                <h1 class="logoName"> Sweet Cake </h1>
+            </div>
+
+            <p>Obsessive doesn’t even begin to describe my love for cake. I’ll even fight little children if I have to.</p>
+
+        </div>
+        <div class="box">
+            <h3>Quick link</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>review</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+        </div>
+        <div class="box">
+            <h3>Extra link</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Account info</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
+            <a href="#"> <i class="fas fa-envelope"></i>kajolpathak@gmail.com</a>
+
+        </div>
+
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+   |all rights reserved ! 
+    </div>
+</footer>
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file  -->
+<script src="../javascript/index.js"></script>
+</body>
+</html>
